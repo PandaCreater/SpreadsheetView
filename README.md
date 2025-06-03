@@ -49,20 +49,9 @@ SpreadsheetView is written in Swift 5. Compatible with iOS 9.0+
 
 ## Installation
 
-### CocoaPods
-SpreadsheetView is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### Xcode Package 
 
-```ruby
-pod 'SpreadsheetView'
-```
-
-### Carthage
-For [Carthage](https://github.com/Carthage/Carthage), add the following to your `Cartfile`:
-
-```ogdl
-github "kishikawakatsumi/SpreadsheetView"
-```
+File->Add package dependencies -> search 'https://github.com/PandaCreater/SpreadsheetView/' -> add
 
 ## Getting Started
 
