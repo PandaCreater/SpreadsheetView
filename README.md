@@ -1,51 +1,8 @@
-<p align="center">
-  <img src="Resources/Logo.png"  style="width: 400px;" width="400" />
-</p>
-
-<p align="center">
-    <a href="https://travis-ci.org/kishikawakatsumi/SpreadsheetView">
-        <img src="https://travis-ci.org/kishikawakatsumi/SpreadsheetView.svg?branch=master&style=flat"
-             alt="Build Status">
-    </a>
-    <a href="https://codecov.io/gh/kishikawakatsumi/SpreadsheetView">
-        <img src="https://codecov.io/gh/kishikawakatsumi/SpreadsheetView/branch/master/graph/badge.svg" alt="Codecov" />
-    </a>
-    <a href="https://cocoapods.org/pods/SpreadsheetView">
-        <img src="https://img.shields.io/cocoapods/v/SpreadsheetView.svg?style=flat"
-             alt="Pods Version">
-    </a>
-    <a href="http://cocoapods.org/pods/SpreadsheetView/">
-        <img src="https://img.shields.io/cocoapods/p/SpreadsheetView.svg?style=flat"
-             alt="Platforms">
-    </a>
-    <a href="https://github.com/Carthage/Carthage">
-        <img src="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat"
-             alt="Carthage Compatible">
-    </a>
-</p>
-
-----------------
-
-Full configurable spreadsheet view user interfaces for iOS applications. With this framework, you can easily create complex layouts like schedule, Gantt chart, timetable as if you are using Excel.
-
-<img src="Resources/DailySchedule_portrait.png" style="width: 300px; height: 534px;" width="300" height="534"></img>&nbsp;<img src="Resources/DailySchedule_landscape.png" style="width: 534px; height: 300px;" width="534" height="300"></img><br>
-<img src="Resources/Timetable.png" style="width: 300px; height: 534px;" width="300" height="534"></img>&nbsp;
-<img src="Resources/GanttChart.png" style="width: 534px; height: 300px;" width="534" height="300"></img>
-
-## Features
-- [x] Fixed column and row headers
-- [x] Merge cells
-- [x] Circular infinite scrolling automatically
-- [x] Customize gridlines and borders for each cell
-- [x] Customize inter cell spacing vertically and horizontally
-- [x] Fast scrolling, memory efficient
-- [x] `UICollectionView` like API
-- [x] Well unit tested
-
+## This is fark from https://github.com/kishikawakatsumi/SpreadsheetView/, just for self project use! 
 ##### Find the above displayed examples in the [`Examples`](https://github.com/kishikawakatsumi/SpreadsheetView/tree/master/Examples) folder.
 
 ## Requirements
-SpreadsheetView is written in Swift 5. Compatible with iOS 9.0+
+SpreadsheetView is written in Swift 6.
 
 ## Installation
 
@@ -98,16 +55,12 @@ func frozenColumns(in spreadsheetView: SpreadsheetView) -> Int {
 }
 ```
 
-<img src="Resources/ColumnHeader.gif" style="width: 200px;" width="200"></img>
-
 #### Row Header
 ```swift
 func frozenRows(in spreadsheetView: SpreadsheetView) -> Int {
     return 2
 }
 ```
-
-<img src="Resources/RowHeader.gif" style="width: 200px;" width="200"></img>
 
 #### both
 ```swift
@@ -119,8 +72,6 @@ func frozenRows(in spreadsheetView: SpreadsheetView) -> Int {
     return 2
 }
 ```
-
-<img src="Resources/BothHeaders.gif" style="width: 200px;" width="200"></img>
 
 ### Merge cells
 Multiple cells can be merged and then they are treated as one cell. It is used for grouping cells.
@@ -176,17 +127,12 @@ You can customize the appearance of grid lines and borders of the cell. You can 
 
 The difference between gridlines and borders is that the gridlines are drawn at the center of the inter-cell spacing, but the borders are drawn to fit around the cell.
 
-#### Cell spacing
-
-<img src="Resources/IntercellSpacing.png" style="width: 200px;" width="200"></img>
 
 ```swift
 spreadsheetView.intercellSpacing = CGSize(width: 1, height: 1)
 ```
 
 #### Gridlines
-
-<img src="Resources/Grid.png" style="width: 200px;" width="200"></img>
 
 `SpreadsheetView`'s `gridStyle` property is applied to the entire table.
 ```swift
@@ -202,8 +148,6 @@ cell.gridlines.right = .none
 ```
 
 #### Border
-
-<img src="Resources/Border.png" style="width: 200px;" width="200"></img>
 
 You can set different `borderStyle` for each cell as well.
 
