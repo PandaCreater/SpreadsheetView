@@ -1,5 +1,4 @@
 ## This is fark from https://github.com/kishikawakatsumi/SpreadsheetView/, just for self project use! 
-##### Find the above displayed examples in the [`Examples`](https://github.com/kishikawakatsumi/SpreadsheetView/tree/master/Examples) folder.
 
 ## Requirements
 SpreadsheetView is written in Swift 6.
