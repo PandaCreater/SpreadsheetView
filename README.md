@@ -1,4 +1,4 @@
-## This is fark from https://github.com/kishikawakatsumi/SpreadsheetView/, just for self project use! 
+## This is fork from https://github.com/kishikawakatsumi/SpreadsheetView/, just for self project use! 
 
 ## Requirements
 SpreadsheetView is written in Swift 6.
@@ -105,8 +105,6 @@ spreadsheetView.circularScrolling = CircularScrolling.Configuration.vertically
 ```swift
 spreadsheetView.circularScrolling = CircularScrolling.Configuration.both
 ```
-
-<img src="Resources/CircularScrolling.gif" style="width: 200px;" width="200"></img>
 
 If circular scrolling is enabled, you can set additional parameters that the option not to repeat column/row header and to extend column/row header to the left/top edges. `CircularScrolling.Configuration` is a builder pattern,  can easily select the appropriate combination by chaining properties.
 
