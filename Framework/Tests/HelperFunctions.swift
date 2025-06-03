@@ -13,7 +13,7 @@ func waitRunLoop(secs: TimeInterval = 0) {
     RunLoop.main.run(until: Date(timeIntervalSinceNow: secs))
 }
 
-func defaultViewController(parameters: Parameters) -> SpreadsheetViewController {
+@MainActor func defaultViewController(parameters: Parameters) -> SpreadsheetViewController {
     let viewController = SpreadsheetViewController()
 
     viewController.numberOfColumns = { _ in return parameters.numberOfColumns }
@@ -34,14 +34,14 @@ func defaultViewController(parameters: Parameters) -> SpreadsheetViewController 
     return viewController
 }
 
-func showViewController(viewController: UIViewController) {
+@MainActor func showViewController(viewController: UIViewController) {
     let window = UIWindow(frame: UIScreen.main.bounds)
     window.backgroundColor = .white
     window.rootViewController = viewController
     window.makeKeyAndVisible()
 }
 
-func numberOfVisibleColumns(in view: SpreadsheetView, contentOffset: CGPoint = .zero, parameters: Parameters) -> Int {
+@MainActor func numberOfVisibleColumns(in view: SpreadsheetView, contentOffset: CGPoint = .zero, parameters: Parameters) -> Int {
     let contentInset: UIEdgeInsets
     if #available(iOS 11.0, *) {
         contentInset = view.adjustedContentInset
@@ -67,7 +67,7 @@ func numberOfVisibleColumns(in view: SpreadsheetView, contentOffset: CGPoint = .
     return columnCount
 }
 
-func numberOfVisibleRows(in view: SpreadsheetView, contentOffset: CGPoint = .zero, parameters: Parameters) -> Int {
+@MainActor func numberOfVisibleRows(in view: SpreadsheetView, contentOffset: CGPoint = .zero, parameters: Parameters) -> Int {
     let contentInset: UIEdgeInsets
     if #available(iOS 11.0, *) {
         contentInset = view.adjustedContentInset

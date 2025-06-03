@@ -72,9 +72,9 @@ public enum CircularScrolling {
     }
 
     struct Direction: OptionSet {
-        static var vertically = Direction(rawValue: 1 << 0)
-        static var horizontally = Direction(rawValue: 1 << 1)
-        static var both: Direction = [.vertically, .horizontally]
+        static let vertically = Direction(rawValue: 1 << 0)
+        static let horizontally = Direction(rawValue: 1 << 1)
+        static let both: Direction = [.vertically, .horizontally]
 
         let rawValue: Int
         init(rawValue: Int) {
@@ -89,8 +89,8 @@ public enum CircularScrolling {
     }
 
     struct TableStyle: OptionSet {
-        static var columnHeaderNotRepeated = TableStyle(rawValue: 1 << 0)
-        static var rowHeaderNotRepeated = TableStyle(rawValue: 1 << 1)
+        static let columnHeaderNotRepeated = TableStyle(rawValue: 1 << 0)
+        static let rowHeaderNotRepeated = TableStyle(rawValue: 1 << 1)
 
         let rawValue: Int
         init(rawValue: Int) {

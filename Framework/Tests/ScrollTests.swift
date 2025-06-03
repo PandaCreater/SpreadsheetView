@@ -9,7 +9,7 @@
 import XCTest
 @testable import SpreadsheetView
 
-class ScrollTests: XCTestCase {
+@MainActor class ScrollTests: XCTestCase {
     override func setUp() {
         super.setUp()
         continueAfterFailure = false

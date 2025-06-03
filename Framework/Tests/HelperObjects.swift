@@ -9,7 +9,7 @@
 import XCTest
 @testable import SpreadsheetView
 
-class SpreadsheetViewController: UIViewController, SpreadsheetViewDataSource, SpreadsheetViewDelegate {
+@MainActor class SpreadsheetViewController: UIViewController, SpreadsheetViewDataSource, SpreadsheetViewDelegate {
     var spreadsheetView = SpreadsheetView()
 
     var numberOfColumns: (_ spreadsheetView: SpreadsheetView) -> Int = { _ in return 0 }

@@ -9,7 +9,7 @@
 import XCTest
 @testable import SpreadsheetView
 
-class SelectionTests: XCTestCase {
+@MainActor class SelectionTests: XCTestCase {
     override func setUp() {
         super.setUp()
         continueAfterFailure = false

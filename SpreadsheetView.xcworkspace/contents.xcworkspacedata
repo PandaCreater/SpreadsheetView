@@ -8,23 +8,4 @@
          location = "group:Framework/SpreadsheetView.xcodeproj">
       </FileRef>
    </Group>
-   <Group
-      location = "container:"
-      name = "Examples">
-      <FileRef
-         location = "group:Examples/ClassData/ClassData.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Examples/Schedule/Schedule.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Examples/GanttChart/GanttChart.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Examples/Timetable/Timetable.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Examples/Playground.playground">
-      </FileRef>
-   </Group>
 </Workspace>

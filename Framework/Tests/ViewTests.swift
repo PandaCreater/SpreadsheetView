@@ -9,7 +9,7 @@
 import XCTest
 @testable import SpreadsheetView
 
-class ViewTests: XCTestCase {
+@MainActor class ViewTests: XCTestCase {
     override func setUp() {
         super.setUp()
     }
